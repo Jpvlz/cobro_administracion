@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
 </head>
 
@@ -16,53 +17,54 @@
             <img src="img/LOGO COBRO DE ADMINISTRACION.JPG" alt="Logo de la empresa" class="logo">
         </div>
 
-        <div class="titulo-header1">
-            <h1>Cobro de Administracion</h1>
+        <div class="titulo-header">
+            <h1 class="header-title">Cobro de Administracion</h1>
         </div>
+
+
     </header>
 
-    <div class="navegador-div1">
+    <div class="navegador">
         <nav>
             <ul class="horizontal-list">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contactanos</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactenos.html">Contactanos</a></li>
                 <li><a href="registro.html">Registrate</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="formulario-container">
-        <form action="#" method="post">
-            <h2>Ingresa Tus Datos</h2>
-            <div class="form-grupo" id="nombres">
-                <label for="Nombres">Nombres y Apellidos</label>
-                <input type="text" id="Nombres" name="Nombres" required><br>
-            </div>
+    <main>
+        <div class="form-container">
+            <form action="#" method="post">
+                <h2>Ingresa Tus Datos</h2>
+                <label for="Nombres">
+                    <span>Nombres y Apellidos</span>
+                    <input type="text" id="Nombres" name="Nombres" required>
+                </label>
 
-            <div class="form-grupo">
-                <label for="Email">Email</label>
-                <input type="email" id="Emal" name="Email" required><br>
-            </div>
+                <label for="Email"><span>Email</span>
+                    <input type="email" id="Emal" name="Email" required>
+                </label>
 
-            <div class="form-grupo">
-                <label for="Fecha de nacimiento">Fecha de nacimiento</label>
-                <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required><br>
-            </div>
+                <label for="Fecha de nacimiento"><span>Fecha de nacimiento</span>
+                    <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
+                </label>
 
-            <div class="form-grupo">
-                <label for="Telefono">Telefono</label>
-                <input type="tel" id="telefono" name="telefono" required><br>
-            </div>
+                <label for="Telefono"><span>Telefono</span>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </label>
 
-            <div class="form-grupo">
                 <button type="submit">Enviar</button>
-            </div>
-        </form>
 
-    </div>
-    <footer class="pie-pagina">
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="pie">
         <p>© Todos los derechos reservados 2024. ¡Hecho con tecnologia nunca jamas vista!</p>
     </footer>
 
