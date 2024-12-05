@@ -206,10 +206,23 @@ nav {
 
 .titulo1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     padding: 20px;
     margin-top: 10px;
+}
+
+.titulo1>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo1 .texto {
+    width: fit-content;
 }
 
 .titulo1 h2 {
@@ -240,6 +253,10 @@ nav {
     animation: fade_up 1s ease;
 }
 
+.texto ul {
+    max-width: 70ch;
+}
+
 @keyframes fade_up {
     from {
         opacity: 0.5;
@@ -249,5 +266,24 @@ nav {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 1100px) {
+    .bottom-section {
+        flex-direction: column-reverse;
+    }
+
+    .carousel-inner,
+    .bottom-image,
+    .carousel-inner img,
+    .foto1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo1 {
+        flex-direction: column-reverse;
+        gap: 20px;
     }
 }
