@@ -36,6 +36,7 @@ header {
     display: flex;
     margin: auto;
     position: absolute;
+    mix-blend-mode: hard-light;
 }
 
 .titulo-header {
